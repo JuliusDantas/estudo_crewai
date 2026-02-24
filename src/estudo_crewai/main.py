@@ -18,7 +18,7 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'Genexus',
+        'topic': 'ReactJs',
     }
 
     try:

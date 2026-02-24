@@ -1,3 +1,5 @@
 .env
 __pycache__/
 .DS_Store
+resumo_didatico.md
+exercicios_praticos.md

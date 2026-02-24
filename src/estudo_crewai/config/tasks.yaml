@@ -7,3 +7,20 @@ tarefa_criar_resumo_didatico:
         Não use marcações de snippets de código no início/fim do arquivo de saída, por exemplo ```markdown.
     output_file: "resumo_didatico.md"
     agent: "agente_especialista_didatico"
+
+tarefa_gerar_exercicios :
+    description: >
+        'Crie um conjunto de exercícios práticos sobre {topic} com base no conteúdo do arquivo '
+        'resumo_didatico.md, elaborado para alunos iniciantes em tecnologia. Inclua pelo menos 5 '
+        'questões que explorem os principais pontos do resumo, utilizando diferentes formatos, como '
+        'perguntas objetivas, situações problema e desafios de associação. As questões devem ser '
+        'claras, contextualizadas e incentivar o raciocínio prático.'
+    
+    expected_output: >
+        'Arquivo em Markdown com pelo menos 5 exercícios variados, bem explicados e adequados para '
+        'iniciantes. Sempre responda em Português (Brasil). Não use marcações de snippets de código '
+        'no início/fim do arquivo de saída, por exemplo ```markdown.'
+    
+    output_file: "exercicios_praticos.md"
+    agent: "agente_criador_exercicios"
+

@@ -25,6 +25,13 @@ class EstudoCrewai():
             config=self.agents_config['agente_especialista_didatico'], # type: ignore[index]
             verbose=True
         )
+    
+    @agent
+    def agente_criador_exercicios(self) -> Agent:
+        return Agent(
+            config=self.agents_config['agente_criador_exercicios'], # type: ignore[index]
+            verbose=True
+        )
 
     
 
@@ -35,6 +42,12 @@ class EstudoCrewai():
     def tarefa_criar_resumo_didatico(self) -> Task:
         return Task(
             config=self.tasks_config['tarefa_criar_resumo_didatico'], # type: ignore[index]
+        )
+    
+    @task
+    def tarefa_gerar_exercicios(self) -> Task:
+        return Task(
+            config=self.tasks_config['tarefa_gerar_exercicios'], # type: ignore[index]
         )
 
     
